@@ -1,18 +1,14 @@
 package com.mysys.services.holdingProvider.holdingProvider;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class Controller {
+
+public interface Controller {
 
     @RequestMapping("/")
-    public String home() {
-        return "version 1.0";
-    }
+    public String home();
 
     @RequestMapping("/test")
-    public String healthCheck() {
-        return "Springboot started.";
-    }
+    public String healthCheck();
+
 }
