@@ -9,7 +9,7 @@ public class ControllerTests {
 
     @Test
     public void homeTest() {
-        Controller a = new Controller();
+        Controller a = new HoldingProviderApplication();
         String actValue = a.home();
         Assert.assertEquals("version 1.0", actValue);
 
@@ -17,7 +17,7 @@ public class ControllerTests {
 
     @Test
     public void healthCheckTest() {
-        Controller a = new Controller();
+        Controller a = new HoldingProviderApplication();
         String actValue = a.healthCheck();
         Assert.assertEquals("Springboot started.", actValue);
     }
